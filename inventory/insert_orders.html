@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Place New Orders</title>
+    <link rel="stylesheet" href="new_user_form.css">
+    <style>
+        .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    transform: translateY(-90%);
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+  }
+    </style>
+</head>
+ 
+<body>
+    <form class="box" action="http://localhost/inventory/insert_orders.php" name="AddOrders" method="post">
+        <!-- <img src="../anime/images/2.png" height="80px" width="120px"> -->
+        <h1 class="dem">ADD ORDERS</h1>
+        <input type="text" name="u_id" placeholder="u_id" required>
+        <input type="text" name="name" placeholder="name" required>
+        <input type="text" name="o_date" placeholder="o_date" required>
+        <input type="text" name="qty" placeholder="qty" required>
+        <input type="text" name="price" placeholder="price" required>
+        <input type="text" name="amount" placeholder="amount" required>
+        <input type="submit" value="SAVE">
+        
+    </form>
+    <div class="footer">© 2022 MVJCE Designed by Sweta Suman Giri</div>
+</body>
+
+</html>

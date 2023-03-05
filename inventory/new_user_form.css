@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+       url(./img/start.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    opacity: 0.9;
+    border-radius: 40px;
+  }
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    transform: translateY(-90%);
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+  }
+  .box:hover {
+    box-shadow: 0 0 10px #2c3e50, 0 0 40px #2c3e50;
+  }
+  .dem {
+    color: white;
+    position: relative;
+    cursor: pointer;
+  }
+  .dem::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #ffc400;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .dem:hover::after {
+    width: 100%;
+  }
+  .box input[type="text"],.box input[type="email"],
+  .box input[type="password"] {
+    border: 2px solid #0062ff;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    transition: 0.25s;
+  }
+  .box input[type="text"]:hover,.box input[type="email"]:hover,
+  .box input[type="password"]:hover {
+    width: 280px;
+    border-color: #ffc400;
+  }
+  .box input[type="text"]:focus,.box input[type="email"]:focus,
+  .box input[type="password"]:focus {
+    width: 280px;
+    border-color: #ffc400;
+  }
+  .box input[type="submit"] {
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #3498db;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 40px;
+    outline: none;
+    background: #ffc400;
+    color: white;
+    border-color: #ffc400;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .box input[type="submit"]:hover {
+    background: #ffc400;
+    color: rgb(rgb(0, 0, 0));
+    box-shadow: 0 0 10px #ffc400, 0 0 40px #ffc400;
+  }
+  a {
+    text-decoration: none;
+  }
